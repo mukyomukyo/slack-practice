@@ -3,7 +3,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
   token: process.env.SLACK_BOT_TOKEN
 });
-//メッセージが投稿された時に呼ばれるメソッド
+//メッセージが投稿された時に呼ばれるメソッドaaa
 app.message(async ({ message, say }) => {
   await say(message.text);
 });
